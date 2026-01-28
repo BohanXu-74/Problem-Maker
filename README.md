@@ -1,7 +1,8 @@
 # Problem Maker
 
 
-[![Problem Maker Demo](https://img.youtube.com/vi/YTpI4UFTeAw/0.jpg)](https://www.youtube.com/watch?v=YTpI4UFTeAw)
+[![Problem Maker Demo](https://img.youtube.com/vi/TvxShnH4dns/0.jpg)](https://youtu.be/TvxShnH4dns)
+
 
 
 **Problem Maker** is a handheld hardware device designed to help you practice math in a focused, distraction-free way.  
