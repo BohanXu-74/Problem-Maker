@@ -37,36 +37,9 @@ Click the thumbnail to watch a demo of Problem Maker in action!
 
 ---
 
-
-### Encoder Connections
-
-| Encoder Pin | MCU Pin | Description |
-|------------|--------|-------------|
-| A          | GPIO   | Encoder phase A |
-| B          | GPIO   | Encoder phase B |
-| SW (opt.)  | GPIO   | Push-to-select |
-| VCC        | 3.3V / 5V | Power |
-| GND        | GND    | Ground |
-
-### Display Connections (I²C Example)
-
-| Display Pin | MCU Pin |
-|------------|--------|
-| SDA        | SDA    |
-| SCL        | SCL    |
-| VCC        | 3.3V / 5V |
-| GND        | GND    |
-
-### Button Connections
-
-| Button | MCU Pin | Function |
-|-------|--------|----------|
-| Start | GPIO   | Start session |
-| Confirm | GPIO | Submit answer |
-
 ### Power
 
-- USB or battery powered  
+- Powered by 3 AAA batteries 
 - Shared ground between MCU, display, and encoder  
 
 ---
@@ -77,9 +50,8 @@ The enclosure is fully 3D printed and designed to house the complete electronics
 
 Files included:  
 - STL files for direct printing (`hardware/enclosure/*.stl`)  
-- STEP file for modification (`hardware/enclosure/*.step`)  
 
-**Print settings (example):**  
+**Print settings:**  
 - Material: PLA  
 - Layer height: 0.2 mm  
 - Infill: 20%  
@@ -92,9 +64,7 @@ Files included:
 All source files are in the `src/` folder:
 
 - `main.c` – main program logic  
-- `encoder.c` – rotary encoder input handling  
-- `display.c` – display output  
-- `math.c` – math problem generation  
+- `main.ihx` – file to upload to STC
 
 ---
 
@@ -108,29 +78,27 @@ Make sure `sdcc` is in your system PATH.
 Open a terminal in your `src/` folder:
 
 ### bash
-sdcc main.c encoder.c display.c math.c
-This generates a .hex file for your STC microcontroller.
+sdcc main.c
+This generates a .ihx file for your STC microcontroller.
 
-3. Flash to MCU
+### 3. Flash to MCU
 
-Windows: Use STC-ISP to flash the .hex file
+Windows: Use STC-ISP to flash the .ihx file
 
 Linux/macOS: Use stcgal:
 
-stcgal -p /dev/ttyUSB0 -b 9600 -w main.hex
+stcgal -p /dev/ttyUSB0 -b 9600 main.ihx
 
 
 -p → serial port
 
 -b → baud rate
 
--w → write hex file to MCU
-
-4. Test
+### 4. Test
 
 Turn the rotary encoder
 
-Display shows selected math operation
+Select a math operation
 
-Solve 10 questions and check timer
+Solve 10 questions and check timer and percentage
 
