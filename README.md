@@ -7,7 +7,7 @@ Using a **rotary encoder**, you select the math operation you want to practice, 
 
 ---
 
-## 🎥 Demo Video
+##  Demo Video
 
 [![Problem Maker Demo](https://img.youtube.com/vi/YTpI4UFTeAw/0.jpg)](https://www.youtube.com/watch?v=YTpI4UFTeAw)
 
@@ -15,18 +15,17 @@ Click the thumbnail to watch a demo of Problem Maker in action!
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🔄 Rotary encoder to select math symbols (➕ ➖ ✖ ➗)  
-- 🧮 Generates 10 math problems per session  
-- ⏱ Built-in timer to measure completion time  
-- 📟 Display shows questions, answers, and time  
-- 📦 Handheld enclosure — 3D printed  
-- 🎯 Designed for speed practice and embedded learning  
+-  Rotary encoder to select math symbols (➕ ➖ ✖ ➗)  
+-  Generates 10 math problems per session  
+-  Built-in timer to measure completion time  
+-  Display shows questions, answers, and time  
+-  Handheld enclosure — 3D printed  
 
 ---
 
-## 🕹 How It Works
+##  How It Works
 
 1. Turn the **rotary encoder** to choose a math operation.  
 2. Press **Start** to begin a session.  
@@ -40,22 +39,15 @@ Click the thumbnail to watch a demo of Problem Maker in action!
 ### Power
 
 - Powered by 3 AAA batteries 
-- Shared ground between MCU, display, and encoder  
 
 ---
 
-## 🖨 3D Printed Enclosure
+##  3D Printed Enclosure
 
 The enclosure is fully 3D printed and designed to house the complete electronics.
 
 Files included:  
 - STL files for direct printing (`hardware/enclosure/*.stl`)  
-
-**Print settings:**  
-- Material: PLA  
-- Layer height: 0.2 mm  
-- Infill: 20%  
-- Supports: No  
 
 ---
 
@@ -87,12 +79,7 @@ Windows: Use STC-ISP to flash the .ihx file
 
 Linux/macOS: Use stcgal:
 
-stcgal -p /dev/ttyUSB0 -b 9600 main.ihx
-
-
--p → serial port
-
--b → baud rate
+stcgal main.ihx
 
 ### 4. Test
 
@@ -100,5 +87,5 @@ Turn the rotary encoder
 
 Select a math operation
 
-Solve 10 questions and check timer and percentage
+Solve 10 questions and check time and percentage
 
