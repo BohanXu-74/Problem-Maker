@@ -116,7 +116,6 @@ Run the command first, then power-cycle.
 Problem-Maker/
 ├── src/
 │   ├── main.c          # Full firmware source
-│   ├── stc15.h         # Self-written SFR definitions for STC15W204S
 │   └── main.ihx        # Compiled Intel HEX, ready to flash
 ├── images/
 │   └── Schematic.jpg   # Hand-drawn wiring schematic
