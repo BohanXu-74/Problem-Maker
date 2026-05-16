@@ -2,9 +2,7 @@
 
 A handheld math quiz device built around the STC15W204S (8051-compatible) microcontroller. My little brother needed to practice arithmetic, so I built him something instead of downloading an app. Ten problems per session, four operations, rotary encoder input, HD44780 LCD output, and a timer running off Timer0 interrupts. All written from scratch in C with SDCC, no HAL, no external libraries. `stc15.h` is self-written, defining the SFR addresses for the STC15W204S directly.
 
-[![Demo Video](https://img.youtube.com/vi/YTpI4UFTeAw/maxresdefault.jpg)](https://www.youtube.com/watch?v=YTpI4UFTeAw)
-
-![Schematic](images/Schematic.jpg)
+[![YouTube](https://img.shields.io/badge/YouTube-Watch%20Demo-red?logo=youtube)](https://www.youtube.com/watch?v=YTpI4UFTeAw)
 
 ---
 
